@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="style12.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+         <div class="sidebar-header">
+                <div class="header-top"> 
+                <h1>Notes</h1>
+                <button class="dark-mode-btn" id="darkModeToggle">🌙</button>
+             </div>
+              <button id="newNoteBtn" class="new-note-btn">+ New Notes</button>
+           </div>
+<div class="notes-list" id="notesList">
+    <!--All notes will be displayed here-->
+<!--<div class="note-item">
+    <h3>Testing</h3>
+    <p>3/15/2025</p>
+ </div>
+<div class="note-item active">
+    <h3>Markdown Test</h3>
+    <p>3/15/2025</p>
+</div> -->
+</div>
+</div>
+<div class="main-content">
+    <div class="editor-container">
+        <div class="editor-header">
+            <input type="text" class="title-input" id="titleInput" placeholder="Note Title" />
+            <div class="editor-actions">
+                <button class="action-btn" id="saveNoteBtn">Save</button>
+               
+                <button class="action-btn delete" id="deleteNoteBtn">Delete</button>
+
+            </div>
+        </div>
+        <div class="editor-tabs">
+            <button class="tab-btn active" data-tab="edit">Edit</button>
+            <button class="tab-btn" data-tab="Preview">Preview</button>
+        </div>
+        <div class="editor-content" >
+            <textarea placeholder="Write your note here(Markdown supported)..." id="noteContent"></textarea>
+            <div class="preview-content"  id="previewContent"></div>
+ </div>
+    </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/16.1.1/lib/marked.esm.js" integrity="sha512-r0e7LRhCi/0TOoQVlpTKCAt8QscxOPstYLlVP2VnKG8ZLw30JNeI3XfHtfY82qIsT6WXdnmu/5kBsk6S93WGow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    
+  <script src="script.js"></script>  
+</body>
+</html>
